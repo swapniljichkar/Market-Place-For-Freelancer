@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now</title>
+<link rel="shortcut icon" href="/favicon.ico (2).png" type="image/x-icon">
+<style>
+ .apply-now-section {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+}
+
+.apply-now-section h2 {
+  margin-bottom: 10px;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-section h3 {
+  margin-bottom: 10px;
+}
+
+#apply-now-form input, #apply-now-form select, #apply-now-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+#apply-now-form input[type="file"] {
+  margin-bottom: 20px;
+}
+
+#apply-now-form button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#apply-now-form button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+</style>
+</head>
+<body>
+    <!-- Apply Now Form -->
+<section class="apply-now-section">
+  <div class="container">
+    <h2>Apply Now</h2>
+    <p>Take the first step towards your freelance career.</p>
+    <form id="apply-now-form">
+      <!-- Personal Information -->
+      <div class="form-section">
+        <h3>Personal Information</h3>
+        <input type="text" id="name" name="name" placeholder="Name">
+        <input type="email" id="email" name="email" placeholder="Email">
+        <input type="phone" id="phone" name="phone" placeholder="Phone Number">
+      </div>
+      
+      <!-- Skills and Experience -->
+      <div class="form-section">
+        <h3>Skills and Experience</h3>
+        <select id="category" name="category">
+          <option value="web-development">Web Development</option>
+          <option value="content-writing">Content Writing</option>
+          <option value="graphic-design">Graphic Design</option>
+        </select>
+        <input type="text" id="skills" name="skills" placeholder="Skills (comma separated)">
+        <textarea id="experience" name="experience" placeholder="Experience"></textarea>
+      </div>
+      
+      <!-- Portfolio and Files -->
+      <div class="form-section">
+        <h3>Portfolio and Files</h3>
+        <input type="file" id="portfolio" name="portfolio">
+        <input type="file" id="resume" name="resume">
+      </div>
+      
+      <!-- Submit Button -->
+      <button type="submit">Apply Now</button>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>

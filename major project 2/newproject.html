@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creat neww projects</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    margin-bottom: 20px;
+}
+
+.form-section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.form-section h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Messages</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Create New Project</h1>
+            <form>
+                <div class="form-section">
+                    <h2>Project Details</h2>
+                    <div class="form-group">
+                        <label for="project-title">Project Title:</label>
+                        <input type="text" id="project-title" name="project-title">
+                    </div>
+                    <div class="form-group">
+                        <label for="project-category">Project Category:</label>
+                        <select id="project-category" name="project-category">
+                            <option value="">Select</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="graphic-design">Graphic Design</option>
+                            <option value="content-writing">Content Writing</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="project-description">Project Description:</label>
+                        <textarea id="project-description" name="project-description"></textarea>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h2>Project Timeline</h2>
+                    <div class="form-group">
+                        <label for="start-date">Start Date:</label>
+                        <input type="date" id="start-date" name="start-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="end-date">End Date:</label>
+                        <input type="date" id="end-date" name="end-date">
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h2>Project Team</h2>
+                    <div class="form-group">
+                        <label for="project-manager">Project Manager:</label>
+                        <select id="project-manager" name="project-manager">
+                            <option value="">Select</option>
+                            <option value="john-doe">John Doe</option>
+                            <option value="jane-smith">Jane Smith</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="team-members">Team Members:</label>
+                        <select multiple id="team-members" name="team-members">
+                            <option value="john-doe">John Doe</option>
+                            <option value="jane-smith">Jane Smith</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit">Create Project</button>
+            </form>
+        </main>
+</div>
+
+</body>
+</html>

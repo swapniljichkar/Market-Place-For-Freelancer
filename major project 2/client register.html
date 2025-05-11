@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Registration</title>
+    <link rel="shortcut icon" href="/favicon.ico (2).png" type="image/x-icon">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:aliceblue;
+}
+
+.registration-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color:  whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-container header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration-container header nav ul li {
+    margin-right: 20px;
+}
+
+.registration-container header nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    margin-bottom: 20px;
+}
+
+.form-section {
+    background-color: #eeeeee;
+    padding:80px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.form-section h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./aboutus.html">About us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Register as a Client</h1>
+            <form>
+                <section class="form-section">
+                    <h2>Basic Information</h2>
+                    <div class="form-group">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password">
+                    </div>
+                </section>
+                <section class="form-section">
+                    <h2>Company Information</h2>
+                    <div class="form-group">
+                        <label for="company-name">Company Name:</label>
+                        <input type="text" id="company-name" name="company-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="company-type">Company Type:</label>
+                        <select id="company-type" name="company-type">
+                            <option value="">Select</option>
+                            <option value="private">Private</option>
+                            <option value="public">Public</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="industry">Industry:</label>
+                        <input type="text" id="industry" name="industry">
+                    </div>
+                </section>
+                <button type="submit">Register as a Client</button>
+            </form>
+        </main>
+    
+    </div>
+
+</body>
+</html>

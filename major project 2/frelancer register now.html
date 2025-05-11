@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancers Register Now</title>
+    <link rel="shortcut icon" href="/favicon.ico (2).png" type="image/x-icon">
+    <style>
+     body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.registration-container {
+    max-width:1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-container header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration-container header nav ul li {
+    margin-right: 20px;
+}
+
+.registration-container header nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    margin-bottom: 20px;
+}
+
+.form-section {
+    background-color: whitesmoke;
+    padding: 100px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.form-section h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width:90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+    </style>
+</head>
+<body>
+        <div class="registration-container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./aboutus.html">About us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Join Our Freelance Community</h1>
+            <form>
+                <section class="form-section">
+                    <h2>Basic Information</h2>
+                    <div class="form-group">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password">
+                    </div>
+                </section>
+                <section class="form-section">
+                    <h2>Professional Information</h2>
+                    <div class="form-group">
+                        <label for="profile-picture">Profile Picture:</label>
+                        <input type="file" id="profile-picture" name="profile-picture">
+                    </div>
+                    <div class="form-group">
+                        <label for="professional-title">Professional Title:</label>
+                        <select id="professional-title" name="professional-title">
+                            <option value="">Select</option>
+                            <option value="developer">Developer</option>
+                            <option value="designer">Designer</option>
+                            <option value="writer">Writer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="skills">Skills:</label>
+                        <input type="text" id="skills" name="skills">
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Experience:</label>
+                        <input type="number" id="experience" name="experience"> years
+                    </div>
+                </section>
+                <section class="form-section">
+                    <h2>Expertise & Availability</h2>
+                    <div class="form-group">
+                        <label for="categories">Categories:</label>
+                        <select id="categories" name="categories" multiple>
+                            <option value="web-development">Web Development</option>
+                            <option value="graphic-design">Graphic Design</option>
+                            <option value="content-writing">Content Writing</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="languages">Languages:</label>
+                        <select id="languages" name="languages" multiple>
+                            <option value="english">English</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="french">French</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="availability">Availability:</label>
+                        <select id="availability" name="availability">
+                            <option value="full-time">Full-time</option>
+                            <option value="part-time">Part-time</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+                </section>
+                <section class="form-section">
+                    <h2>Verification</h2>
+                    <div class="form-group">
+                        <label for="phone-number">Phone Number:</label>
+                        <input type="tel" id="phone-number" name="phone-number">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address">
+                    </div>
+                    <div class="form-group">
+                        <label for="id-verification">ID Verification:</label>
+                        <input type="file" id="id-verification" name="id-verification">
+                    </div>
+                </section>
+                <button type="submit">Register as a Freelancer</button>
+            </form>
+        </main>
+    </div>
+
+                        
+
+</body>
+</html>
